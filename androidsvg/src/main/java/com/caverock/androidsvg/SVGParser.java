@@ -719,6 +719,7 @@ class SVGParser
                   text(text, startAndLength[0], startAndLength[1]);
                   break;
                case XmlPullParser.CDSECT:
+               case XmlPullParser.ENTITY_REF:
                   text(parser.getText());
                   break;
                //case XmlPullParser.COMMENT:
